@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(170, 167, 167);
+  color: rgb(15, 15, 15);
+}
+body h1 {
+  color: red;
+}
+img {
+  width: 20%;
+}

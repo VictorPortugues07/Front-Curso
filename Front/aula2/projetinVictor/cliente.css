@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: linear-gradient(90deg, rgb(30, 171, 227), rgb(141, 209, 234));
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  margin-top: 10%;
+  border-radius: 20px;
+  background-color: rgb(141, 209, 234);
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 10px 20px;
+}
+body form label {
+  text-align: start;
+  margin-top: 10%;
+}
+body form input,
+textarea,
+select,
+button {
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+body form button {
+  margin-top: 10%;
+  border-radius: 20px;
+
+  transition: 0.5s;
+}
+button:hover {
+  background-color: rgb(74, 186, 230);
+}

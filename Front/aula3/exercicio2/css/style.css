@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f6f0e2;
+  color: #5a3825;
+  font-size: 100%;
+  line-height: 1.6;
+  padding-top: 100px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75em;
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5f7a4d;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f6f0e2;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffdfae;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2em 1em;
+}
+
+h1 {
+  font-size: 2em;
+  color: #f6f0e2;
+}
+
+h2 {
+  margin: 2em 0 1em;
+  color: #3f572e;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+article {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+article img {
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+article h3 {
+  margin: 0.5rem 0;
+  color: #3f572e;
+  font-size: 1.2em;
+}
+
+article p {
+  font-size: 0.95rem;
+  color: #5a3825;
+}
+
+article span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #5f7a4d;
+}
+
+footer {
+  background-color: #e9e4d4;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 4rem;
+  border-top: 1px solid #ccc;
+  color: #5a3825;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3f572e;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}

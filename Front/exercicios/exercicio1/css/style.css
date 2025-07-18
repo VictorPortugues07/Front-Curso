@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75em;
+  display: block;
+}
+
+header {
+  background-color: #1e293b;
+  padding: 2em 1em;
+  border-bottom: 1px solid #334155;
+}
+
+.navBar {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar h1 {
+  font-size: 2em;
+  font-weight: 700;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#foto {
+  width: 12%;
+  max-width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.2em solid #3b82f6;
+}
+
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 4em auto;
+}
+
+section h1,
+section h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sobre p {
+  font-size: 1.1em;
+  max-width: 80%;
+  color: #94a3b8;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  margin-top: 2em;
+}
+
+.projetos > div {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75em;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 32%;
+  min-width: 280px;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+
+.projetos > div:hover {
+  transform: translateY(-4%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.projetos h2 {
+  font-size: 1.2em;
+  color: #3b82f6;
+  margin-bottom: 0.5em;
+}
+
+.projetos p {
+  font-size: 1em;
+  color: #94a3b8;
+  margin-bottom: 1em;
+  min-height: 6em;
+}
+
+.projetos a {
+  color: #9333ea;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.projetos a:hover {
+  color: #3b82f6;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 90%;
+  margin-top: 1em;
+}
+
+.contato label {
+  font-weight: 600;
+  color: #e2e8f0;
+  font-size: 1em;
+}
+
+.contato input,
+.contato textarea {
+  padding: 1em;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 1em;
+  border-radius: 0.75em;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+  border-color: #3b82f6;
+  outline: 0.15em solid #3b82f6;
+}
+
+.contato textarea {
+  min-height: 9em;
+  resize: vertical;
+}
+
+.contato button {
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+  font-weight: 600;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 0.75em;
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.75em rgba(59, 130, 246, 0.3);
+  transition: background 0.3s;
+  width: fit-content;
+}
+
+.contato button:hover {
+  background: #3b82f6;
+}
+
+footer {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 2em 1em;
+  color: #94a3b8;
+  font-size: 0.9em;
+  border-top: 1px solid #334155;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .navBar h1 {
+    font-size: 1.6em;
+  }
+
+  #foto {
+    width: 20%;
+    max-width: 70px;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 1.75em;
+  }
+
+  .projetos > div {
+    max-width: 100%;
+  }
+}

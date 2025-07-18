@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+  padding: 2%;
+  border: 2px solid rgb(190, 73, 183);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  color: rgb(190, 73, 183);
+  font-size: 1.2em;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #5a3825;
+}
+
+.card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: rgb(190, 73, 183);
+}
+button {
+  padding-left: 10%;
+  padding-right: 10%;
+  background: rgb(190, 73, 183);
+  color: white;
+  border: none;
+  border-radius: 0.75em;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: fit-content;
+}

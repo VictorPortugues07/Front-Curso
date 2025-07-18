@@ -1,0 +1,5 @@
+Exercício 1 – Tabela de Horários de Aula
+Objetivo: Trabalhar com tabelas e cores.
+Descrição: Criar uma tabela com os dias da semana e horários das aulas de uma semana.
+Conceitos: table, thead, tbody, border, background-color, hover.
+Extras: Alternar cores nas linhas (zebra) com nth-child.

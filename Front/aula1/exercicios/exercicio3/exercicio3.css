@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  background-color: rgb(117, 161, 200);
+}
+img {
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 10%;
+}
+h2 {
+  margin-top: 2%;
+  background-color: rgb(177, 186, 186);
+  padding: 1%;
+  border-radius: 20px;
+  display: inline-flex;
+  border: 2px solid black;
+}

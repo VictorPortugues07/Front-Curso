@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog de Tecnologia</title>
+    <link rel="stylesheet" href="../css/layoutVictor.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="coluna menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Tutoriais</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </section>
+
+      <section class="coluna conteudo">
+        <h1>Últimos Posts</h1>
+
+        <article class="post">
+          <h2>O que é Flexbox e por que ele facilita sua vida no CSS?</h2>
+          <p>
+            Flexbox é um modelo de layout do CSS3 que permite organizar
+            elementos de forma simples e flexível, especialmente em designs
+            responsivos. Com poucas linhas de código, é possível alinhar itens,
+            distribuir espaço e adaptar ao tamanho da tela.
+          </p>
+          <p>
+            <strong>Dica:</strong> Use <code>display: flex</code> no container e
+            <code>justify-content</code>, <code>align-items</code> nos itens
+            para ter controle total.
+          </p>
+        </article>
+
+        <article class="post">
+          <h2>5 Dicas para Aprender HTML e CSS Mais Rápido</h2>
+          <p>
+            Aprender HTML e CSS pode ser muito mais fácil com uma rotina
+            prática. Aqui vão 5 dicas úteis:
+          </p>
+          <ul>
+            <li>Pratique criando páginas reais</li>
+            <li>Use o DevTools do navegador</li>
+            <li>Leia a documentação oficial (MDN Web Docs)</li>
+            <li>Refaça layouts que você vê na web</li>
+            <li>
+              Use o
+              <a href="https://www.frontendmentor.io/" target="_blank"
+                >Frontend Mentor</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article class="post">
+          <h2>Design Responsivo: Por que ele é essencial?</h2>
+          <p>
+            Com o aumento do acesso por celulares, criar páginas responsivas não
+            é mais um diferencial, é uma obrigação. Utilizar media queries
+            garante que seu conteúdo seja acessível e legível em todas as telas,
+            desde desktops até smartphones.
+          </p>
+          <p><strong>Exemplo básico:</strong></p>
+          <pre><code>@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+        </article>
+      </section>
+
+      <section class="coluna links">
+        <h2>Links Úteis</h2>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Flexbox"
+              >Guia Flexbox - MDN</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              >CSS Tricks Flexbox Guide</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/css_rwd_intro.asp"
+              >Responsividade - W3Schools</a
+            >
+          </li>
+          <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

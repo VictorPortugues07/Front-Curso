@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(31, 19, 32);
+}
+.cabecalho h1 {
+  text-align: center;
+  color: rgb(190, 73, 183);
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(190, 73, 183);
+}
+.cabecalho img {
+  width: 100%;
+  border-bottom: 2px solid rgb(190, 73, 183);
+}
+
+h2 {
+  color: rgb(190, 73, 183);
+  margin-left: 100px;
+}
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  color: rgb(190, 73, 183);
+}
+.sobre img {
+  width: 50%;
+  border: 4px solid rgb(190, 73, 183);
+  border-radius: 20px;
+}
+.sobre p {
+  font-size: 120%;
+}
+
+.lista {
+  border-top: 2px solid rgb(190, 73, 183);
+}
+.lista li {
+  font-size: 120%;
+  color: rgb(190, 73, 183);
+  margin: 20px;
+}
+.button {
+  text-align: center;
+  margin: 20px;
+}
+.button #botao {
+  padding-left: 10%;
+  padding-right: 10%;
+  background: rgb(190, 73, 183);
+  color: white;
+  border: none;
+  border-radius: 0.75em;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: fit-content;
+}
+
+footer {
+  background-color: rgb(31, 19, 32);
+  text-align: center;
+  margin-top: 4rem;
+  border-top: 2px solid rgb(190, 73, 183);
+  color: rgb(190, 73, 183);
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}

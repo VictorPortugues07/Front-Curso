@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(117, 161, 200);
+  text-align: center;
+}
+h1 {
+  margin-bottom: 2%;
+  background-color: rgb(177, 186, 186);
+  padding: 1%;
+  border-radius: 20px;
+  display: inline-flex;
+  border: 2px solid black;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 1000px;
+  background-color: rgb(177, 186, 186);
+  padding: 1%;
+  margin: 2% auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}

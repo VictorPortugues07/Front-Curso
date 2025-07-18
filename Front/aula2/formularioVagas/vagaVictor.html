@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vaga.css" />
+    <title>Vaga</title>
+  </head>
+  <body>
+    <form class="formulario">
+      <h2>Formulário de Candidatura</h2>
+      <label for="nome">Nome:</label
+      ><!--obrigatorio-->
+      <input type="text" required placeholder="Nome Completo" id="nome" />
+
+      <label for="email">Email:</label
+      ><!--obrigatorio-->
+      <input type="email" id="email" required placeholder="exemplo@gmail.com" />
+
+      <label for="area">Área de Interesse:</label
+      ><!--obrigatorio-->
+      <select name="area" id="area" required>
+        <option value="desenvolvimento">Desenvolvimento</option>
+        <option value="design">Design</option>
+        <option value="suporte">Suporte</option>
+        <option value="comercial">Comercial</option>
+      </select>
+
+      <label for="nivel">Nível de experiência:</label>
+      <select name="nivel" id="nivel">
+        <option value="junior">Júnior</option>
+        <option value="pleno">Pleno</option>
+        <option value="senior">Sênior</option>
+      </select>
+
+      <label for="curriculo">Link do currículo:</label
+      ><!--obrigatorio-->
+      <input
+        type="text"
+        id="curriculo"
+        required
+        placeholder="Ex: Google Drive, URL"
+        pattern="https:\/\/drive\.google\.com\/(file\/d\/|drive\/folders\/|open\?id=)[\w-]+"
+      />
+
+      <label for="disponibilidade">Disponibilidade de horário:</label>
+      <select name="disponibilidade" id="disponibilidade">
+        <option value="manha">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+      </select>
+      <label for="carta">Carta de apresentação:</label>
+      <textarea
+        name="carta"
+        id="carta"
+        placeholder="Fale um pouco sobre você..."
+      ></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
