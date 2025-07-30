@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse at top, #0f0f0f, #1a1a1a);
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h2,
+h3 {
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff99;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid #00f7ff33;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #00f7ff22;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 550px;
+  display: grid;
+  gap: 1.2rem;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #00f7ff88;
+  color: #e0e0e0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 10px #00f7ff55;
+}
+
+button {
+  background: linear-gradient(to right, #00f7ff, #006eff);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #00f7ffaa;
+}
+
+#lista-funcionarios {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00f7ff22;
+  box-shadow: 0 0 15px #00f7ff11;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  overflow-wrap: break-word;
+}
+
+#lista-funcionarios p {
+  border-bottom: 1px solid #00f7ff11;
+  padding: 0.6rem 0;
+  color: #cceeff;
+}
+
+@media (max-width: 600px) {
+  form,
+  #lista-funcionarios {
+    padding: 1.5rem 1rem;
+  }
+
+  input,
+  button {
+    font-size: 0.95rem;
+  }
+}

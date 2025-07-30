@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Louja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container py-5">
+      <h1 class="text-center display-5 mb-5 fw-bold">Bem Vindo</h1>
+
+      <div
+        class="d-flex justify-content-center gap-2 flex-wrap mb-4"
+        id="filtros"
+      >
+        <button
+          class="btn btn-outline-light px-4 rounded-pill"
+          onclick="filtrarProdutos('todos')"
+        >
+          Todos
+        </button>
+        <button
+          class="btn btn-outline-light px-4 rounded-pill"
+          onclick="filtrarProdutos('eletronicos')"
+        >
+          Eletrônicos
+        </button>
+        <button
+          class="btn btn-outline-light px-4 rounded-pill"
+          onclick="filtrarProdutos('livros')"
+        >
+          Livros
+        </button>
+        <button
+          class="btn btn-outline-light px-4 rounded-pill"
+          onclick="filtrarProdutos('roupas')"
+        >
+          Roupas
+        </button>
+      </div>
+
+      <div class="row g-4" id="produtos-container"></div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
